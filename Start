@@ -1,0 +1,31 @@
+#include <iostream> 
+#include <string>
+using namespace std;
+
+int arr[] = {0, 0, 0};
+
+int main()
+{
+    for (int count = 0; count < 200; count++)
+    {
+        cout << arr[0] << " " << arr[1] << " " <<  arr[2] << endl;
+        if(arr[2] < 99)
+        {
+            arr[2]++;
+        }
+        else
+        {
+            arr[2] = 0;
+            
+            if (arr[1] < 99)
+            {
+                arr[1]++;
+            }
+            else
+            {
+                arr[0]++;
+            }
+        }
+    }
+    	system("pause");
+}
